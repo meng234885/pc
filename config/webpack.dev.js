@@ -28,7 +28,7 @@ const webpack = require('webpack');
 
 module.exports = {
   //入口起点
-  entry: ['./src/js/index.js', './src/index.html'],
+  entry: './src/js/index.js',
   //输出
   output: {
     path: resolve(__dirname, './build'),
@@ -79,7 +79,8 @@ module.exports = {
               //如果你想在 jshint 出现错误时，立刻停止编译
               //请设置 failOnHint 参数为true
               failOnHint: true,
-              esversion: 6
+              esversion: 6,
+              loopfunc:true
               // 自定义报告函数
               // reporter: function(errors) { }
             }
