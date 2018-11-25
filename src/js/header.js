@@ -84,7 +84,7 @@ function move(nowIndex) {
     window.onresize=function () {
         arrowNode.style.left = navLiNodes[nowIndex].getBoundingClientRect().left + navLiNodes[nowIndex].offsetWidth / 2 - arrowHalfWidth + 'px';
         contentHeight = contentNode.offsetHeight;
-        ulNode.style.top = - nowIndex * contentHeight+'px'
-    }
+        ulNode.style.top = - nowIndex * contentHeight+'px';
+    };
 }
 
